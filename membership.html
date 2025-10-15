@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Membership | Kutumb Indian Culture Society</title>
+  <meta name="description" content="Kutumb Indian Culture Society — bringing the diverse Indian community together through festivals, classes, and membership." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/kutumb_favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/kutumb_mark.svg" alt="Kutumb logo" class="logo">
+      <span class="brand-text">Kutumb <small>Indian Culture Society</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="classes.html">Classes</a>
+      <a href="membership.html">Membership</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<main class="container narrow">
+  <h1>Membership</h1>
+  <p>Members sustain our programmes and get early access to events, discounted classes and voting rights at the AGM.</p>
+
+  <div class="pricing">
+    <div class="price-card">
+      <h3>Individual</h3>
+      <div class="price">£20<span>/year</span></div>
+      <ul>
+        <li>Event discounts</li>
+        <li>Newsletter</li>
+        <li>AGM voting rights</li>
+      </ul>
+      <a class="btn btn-outline" href="#join">Select</a>
+    </div>
+    <div class="price-card highlight">
+      <h3>Family</h3>
+      <div class="price">£40<span>/year</span></div>
+      <ul>
+        <li>All individual benefits</li>
+        <li>Class discounts for children</li>
+        <li>Priority festival access</li>
+      </ul>
+      <a class="btn btn-primary" href="#join">Select</a>
+    </div>
+    <div class="price-card">
+      <h3>Patron</h3>
+      <div class="price">£100<span>/year</span></div>
+      <ul>
+        <li>All family benefits</li>
+        <li>Patron recognition</li>
+        <li>Invites to special meets</li>
+      </ul>
+      <a class="btn btn-outline" href="#join">Select</a>
+    </div>
+  </div>
+
+  <h2 id="join">Join now</h2>
+  <form class="form" onsubmit="handleMembership(event)">
+    <div class="grid2">
+      <label>Full Name<input required name="name" placeholder="Your Name"></label>
+      <label>Email<input type="email" required name="email" placeholder="you@example.com"></label>
+    </div>
+    <div class="grid2">
+      <label>Membership Type
+        <select name="plan">
+          <option>Individual (£20/year)</option>
+          <option>Family (£40/year)</option>
+          <option>Patron (£100/year)</option>
+        </select>
+      </label>
+      <label>Phone<input name="phone" placeholder="+44…"></label>
+    </div>
+    <label>Address<textarea name="address" rows="3" placeholder="Optional"></textarea></label>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+
+  <p class="note">Online payment integration (Stripe/PayPal) can be added later.</p>
+</main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Kutumb</h4>
+        <p>We are a charitable organisation uniting the diverse Indian community through culture, learning and service.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="membership.html">Become a member</a></li>
+          <li><a href="events.html">Upcoming events</a></li>
+          <li><a href="classes.html">Classes & programmes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> hello@kutumb.org</li>
+          <li><strong>Phone:</strong> +44 0000 000000</li>
+          <li><strong>Address:</strong> Your City, UK</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footnote">© <span id="year"></span> Kutumb Indian Culture Society — Registered Charity (placeholder). All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

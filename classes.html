@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Classes | Kutumb Indian Culture Society</title>
+  <meta name="description" content="Kutumb Indian Culture Society — bringing the diverse Indian community together through festivals, classes, and membership." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/kutumb_favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/kutumb_mark.svg" alt="Kutumb logo" class="logo">
+      <span class="brand-text">Kutumb <small>Indian Culture Society</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="classes.html">Classes</a>
+      <a href="membership.html">Membership</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<main class="container">
+  <h1>Classes & Programmes</h1>
+  <p>We run term‑time and holiday programmes for all ages. Express interest below.</p>
+  <div class="grid cards-3">
+    <article class="class-card">
+      <h3>Dance</h3>
+      <p>Bharatanatyam, Kathak, Garba, Folk & Bollywood choreography.</p>
+    </article>
+    <article class="class-card">
+      <h3>Music</h3>
+      <p>Hindustani & Carnatic vocals, Tabla, Harmonium, Flute, Bhajan groups.</p>
+    </article>
+    <article class="class-card">
+      <h3>Languages</h3>
+      <p>Hindi, Marathi, Gujarati, Punjabi, Tamil — reading, writing and speaking.</p>
+    </article>
+    <article class="class-card">
+      <h3>Educational</h3>
+      <p>Maths & Science support, public speaking, general knowledge clubs.</p>
+    </article>
+    <article class="class-card">
+      <h3>Academic Support</h3>
+      <p>Homework clubs, exam prep workshops and mentoring.</p>
+    </article>
+  </div>
+
+  <h2>Register your interest</h2>
+  <form class="form" onsubmit="handleInterest(event)">
+    <div class="grid2">
+      <label>Full Name<input required name="name" placeholder="Your Name"></label>
+      <label>Email<input type="email" required name="email" placeholder="you@example.com"></label>
+    </div>
+    <label>Area of interest
+      <select name="interest">
+        <option>Dance</option>
+        <option>Music</option>
+        <option>Languages</option>
+        <option>Educational</option>
+        <option>Academic Support</option>
+      </select>
+    </label>
+    <label>Message<textarea name="message" rows="4" placeholder="Tell us a bit more…"></textarea></label>
+    <button class="btn btn-primary" type="submit">Send</button>
+  </form>
+</main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Kutumb</h4>
+        <p>We are a charitable organisation uniting the diverse Indian community through culture, learning and service.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="membership.html">Become a member</a></li>
+          <li><a href="events.html">Upcoming events</a></li>
+          <li><a href="classes.html">Classes & programmes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> hello@kutumb.org</li>
+          <li><strong>Phone:</strong> +44 0000 000000</li>
+          <li><strong>Address:</strong> Your City, UK</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footnote">© <span id="year"></span> Kutumb Indian Culture Society — Registered Charity (placeholder). All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
